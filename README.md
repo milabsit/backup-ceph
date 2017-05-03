@@ -25,3 +25,9 @@ vagrant@ceph-client:~$ sudo mkfs.ext4 -m0 /dev/rbd/rbd/foo
 vagrant@ceph-client:~$ sudo mkdir /mnt/ceph-block-device
 vagrant@ceph-client:~$ sudo mount /dev/rbd/rbd/foo /mnt/ceph-block-device
 ```
+
+Generate random data file
+
+```
+sudo dd if=/dev/urandom of=tempfile1 bs=1M count=1000
+```
