@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   config.ssh.insert_key = false
   config.hostmanager.enabled = true
   config.cache.scope = :box
-  memory = 512
+  memory = 256
   cpus = 2
 
   # We need one Ceph admin machine to manage the cluster
