@@ -31,3 +31,18 @@ Generate random data file
 ```
 sudo dd if=/dev/urandom of=tempfile1 bs=1M count=1000
 ```
+
+
+## Ceph maintenance command
+
+Check status of monitor on ceph-server-3 node
+
+```
+vagrant@ceph-server-3:~$ sudo systemctl status ceph-mon@ceph-server-3
+```
+
+Start monitor
+
+```
+vagrant@ceph-server-3:~$ sudo systemctl start ceph-mon@ceph-server-3
+```
